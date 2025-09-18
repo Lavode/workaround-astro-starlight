@@ -68,7 +68,7 @@ So the next logical step is to make Postfix check whether a mailbox is over quot
 
 ```
 postconf smtpd_recipient_restrictions=reject_unauth_destination, \
-    "check_policy_service unix:private/quota-status"
+    check_policy_service unix:private/quota-status
 ```
 
 This adds two checks:
