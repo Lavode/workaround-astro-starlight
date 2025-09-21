@@ -93,10 +93,10 @@ incoming email is stored. Using the IMAP protocol you get access to a hierarchy 
 even share folders between users. Or use a public folder that can be accessed by anyone – even anonymously. So IMAP is
 generally to be preferred.
 
-Also edit the “mail*plugins” line to enable the \_quota* plugin we will configure later and turn it into:
+Also edit the “mail\_plugins” line to enable the *quota* plugin we will configure later, and turn it into:
 
 ```
-mail_plugins = quota
+mail_plugins = $mail_plugins quota
 ```
 
 <Aside type="danger" title="Check your separator setting!">
