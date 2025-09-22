@@ -291,13 +291,13 @@ Statfile: BAYES_HAM type: redis; length: 0; free blocks: 0;
 Have you been running a mail server with mailboxes in a _Malidir_ structure before but without rspamd? Then you probably have a good amount of ham and spam emails. Let’s use those to train rspamd. It is important to train both ham and spam emails. The _rspamc_ command will allow you to feed entire directories/folders of emails to the learning process. An example to train spam:
 
 ```
-rspamc learn\_spam /var/vmail/example.org/john/Maildir/.Junk/cur
+rspamc learn_spam /var/vmail/example.org/john/Maildir/.Junk/cur
 ```
 
 And this would be an example to train ham from John’s inbox:
 
 ```
-rspamc learn\_ham /var/vmail/example.org/john/Maildir/cur
+rspamc learn_ham /var/vmail/example.org/john/Maildir/cur
 ```
 
 Of course the quality of spam detection will depend on how good the source data is. If users put emails in their Junk folder which are not typical spam they will soil the detection.
